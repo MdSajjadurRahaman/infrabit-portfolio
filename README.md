@@ -142,7 +142,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Security
 
 For guidance on securely configuring the application, please see the [Security Configuration Guide](SECURITY_CONFIGURATION.md).
-- Dotenv for environment variables
+
+## Open Source
+
+This project is open source and welcomes community contributions. For more details on our open source approach and how to get involved, please see the [Open Source Guide](OPEN_SOURCE.md).
+
+## License
 
 ## Getting Started
 
