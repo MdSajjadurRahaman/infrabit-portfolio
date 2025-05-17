@@ -16,13 +16,13 @@ dotenv.config();
 
 // Create Express app
 const app = express();
-const PORT = process.env.PORT || 5001; // Changed port to avoid conflict
+const PORT = process.env.PORT || 5001; // Using a non-reserved port
 
 app.use(express.json());
 
 // Configure CORS with specific options
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://127.0.0.1:5173'], // Add your frontend URL
+  origin: ['http://localhost:3000', 'http://127.0.0.1:3000'], // Add your frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
   credentials: true

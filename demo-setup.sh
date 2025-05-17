@@ -26,12 +26,12 @@ echo -e "${GREEN}Creating demo environment files...${NC}"
 
 # Client .env
 cat > ./client/.env << EOL
-VITE_API_URL=http://localhost:5000/api
+VITE_API_URL=http://localhost:5001/api
 EOL
 
 # Server .env
 cat > ./server/.env << EOL
-PORT=5000
+PORT=5001
 MONGODB_URI=mongodb://mongo:27017/infrabit
 NODE_ENV=development
 
@@ -76,7 +76,7 @@ docker-compose exec server npm run seed:admin
 echo ""
 echo -e "${BOLD}Demo Setup Complete!${NC}"
 echo -e "Frontend: ${GREEN}http://localhost:3000${NC}"
-echo -e "Backend API: ${GREEN}http://localhost:5000${NC}"
+echo -e "Backend API: ${GREEN}http://localhost:5001${NC}"
 echo -e "Admin Login: ${GREEN}http://localhost:3000/admin${NC}"
 echo -e "Username: ${YELLOW}admin@example.com${NC}"
 echo -e "Password: ${YELLOW}demo123${NC}"

@@ -60,7 +60,7 @@ This document provides instructions for deploying the InfraBit Portfolio applica
 
 4. The application will be available at:
    - Frontend: http://localhost:3000
-   - Backend API: http://localhost:5000
+   - Backend API: http://localhost:5001
 
 5. To stop the containers:
    ```bash
@@ -107,13 +107,13 @@ This document provides instructions for deploying the InfraBit Portfolio applica
 
 | Variable      | Description           | Default                   |
 |---------------|-----------------------|---------------------------|
-| VITE_API_URL  | URL to the backend API| http://localhost:5000/api |
+| VITE_API_URL  | URL to the backend API| http://localhost:5001/api |
 
 ### Server
 
 | Variable       | Description                | Example                        |
 |----------------|----------------------------|--------------------------------|
-| PORT           | Server port                | 5000                           |
+| PORT           | Server port                | 5001                           |
 | MONGODB_URI    | MongoDB connection string  | mongodb://localhost:27017/infrabit |
 | NODE_ENV       | Environment                | development/production         |
 | JWT_SECRET     | Secret for JWT tokens      | your_secure_jwt_secret_key     |

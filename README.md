@@ -174,7 +174,7 @@ npm run install-all
 
 **For the server (.env file in /server directory):**
 ```
-PORT=5000
+PORT=5001
 MONGODB_URI=your_mongodb_connection_string
 EMAIL_SERVICE=gmail
 EMAIL_USER=your_email@example.com
@@ -184,7 +184,7 @@ CONTACT_FORM_RECIPIENT=recipient@example.com
 
 **For the client (.env file in /client directory):**
 ```
-VITE_API_URL=http://localhost:5000/api
+VITE_API_URL=http://localhost:5001/api
 ```
 
 ### Running the Application
@@ -204,7 +204,7 @@ To run only the server:
 npm run server
 ```
 
-The client will be available at `http://localhost:5173` and the server at `http://localhost:5000`.
+The client will be available at `http://localhost:5173` and the server at `http://localhost:5001`.
 
 ## Deployment
 
