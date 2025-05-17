@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import Hero from '../components/home/Hero';
-import axios from 'axios';
 import { getServices, getFeaturedProjects, getFeaturedTestimonials } from '../services/api';
 
 // Types
