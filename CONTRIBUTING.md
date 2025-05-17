@@ -23,7 +23,7 @@ We use GitHub to host code, to track issues and feature requests, as well as acc
 
 ### Issues
 
-We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/yourusername/infrabit-portfolio/issues/new); it's that easy!
+We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/MdSajjadurRahaman/infrabit-portfolio/issues/new); it's that easy!
 
 **Great Bug Reports** tend to have:
 
@@ -39,7 +39,7 @@ We use GitHub issues to track public bugs. Report a bug by [opening a new issue]
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/infrabit-portfolio.git
+   git clone https://github.com/MdSajjadurRahaman/infrabit-portfolio.git
    cd infrabit-portfolio
    ```
 

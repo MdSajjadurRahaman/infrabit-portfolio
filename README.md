@@ -1,8 +1,8 @@
 # InfraBit Company Portfolio
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Node.js CI](https://github.com/yourusername/infrabit-portfolio/actions/workflows/node.js.yml/badge.svg)](https://github.com/yourusername/infrabit-portfolio/actions/workflows/node.js.yml)
-[![GitHub issues](https://img.shields.io/github/issues/yourusername/infrabit-portfolio)](https://github.com/yourusername/infrabit-portfolio/issues)
+[![Node.js CI](https://github.com/MdSajjadurRahaman/infrabit-portfolio/actions/workflows/node.js.yml/badge.svg)](https://github.com/MdSajjadurRahaman/infrabit-portfolio/actions/workflows/node.js.yml)
+[![GitHub issues](https://img.shields.io/github/issues/MdSajjadurRahaman/infrabit-portfolio)](https://github.com/MdSajjadurRahaman/infrabit-portfolio/issues)
 
 This is a full stack web application for InfraBit, a company specializing in infrastructure solutions. The application showcases the company's services, projects, team members, testimonials, and provides a contact form for inquiries.
 
@@ -62,7 +62,7 @@ The project is organized into two main directories:
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/infrabit-portfolio.git
+   git clone https://github.com/MdSajjadurRahaman/infrabit-portfolio.git
    cd infrabit-portfolio
    ```
 
@@ -100,7 +100,7 @@ If you prefer using Docker, we provide a quick setup script that creates a demo 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/infrabit-portfolio.git
+git clone https://github.com/MdSajjadurRahaman/infrabit-portfolio.git
 cd infrabit-portfolio
 
 # Run the demo setup script

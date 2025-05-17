@@ -21,12 +21,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/infrabit-portfolio.git"
+    "url": "https://github.com/MdSajjadurRahaman/infrabit-portfolio.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/infrabit-portfolio/issues"
+    "url": "https://github.com/MdSajjadurRahaman/infrabit-portfolio/issues"
   },
-  "homepage": "https://github.com/yourusername/infrabit-portfolio#readme",
+  "homepage": "https://github.com/MdSajjadurRahaman/infrabit-portfolio#readme",
   "devDependencies": {
     "concurrently": "^8.2.2"
   }
