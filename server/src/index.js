@@ -20,13 +20,38 @@ const PORT = process.env.PORT || 5001; // Using a non-reserved port
 
 app.use(express.json());
 
-// Configure CORS with specific options
-app.use(cors({
-  origin: ['http://localhost:3000', 'http://127.0.0.1:3000'], // Add your frontend URL
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
-  credentials: true
-}));
+// Configure CORS for development
+const isDevelopment = process.env.NODE_ENV === 'development';
+
+if (isDevelopment) {
+  // In development, allow all origins with credentials
+  app.use(cors({
+    origin: true,
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
+  }));
+  console.log('CORS configured for development environment - allowing all origins');
+} else {
+  // In production, use a specific list of allowed origins
+  const allowedOrigins = [
+    process.env.CLIENT_URL
+  ];
+
+  app.use(cors({
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+        callback(null, true);
+      } else {
+        callback(new Error('CORS policy violation'));
+      }
+    },
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
+  }));
+  console.log('CORS configured for production environment with specific origins');
+}
 
 // API routes
 app.use('/api/projects', projectRoutes);
@@ -46,8 +71,8 @@ mongoose
   .connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/infrabit')
   .then(() => {
     console.log('Connected to MongoDB');
-    // Start server
-    app.listen(PORT, () => {
+    // Start server - bind to all network interfaces
+    app.listen(PORT, '0.0.0.0', () => {
       console.log(`Server running on port ${PORT}`);
     });
   })

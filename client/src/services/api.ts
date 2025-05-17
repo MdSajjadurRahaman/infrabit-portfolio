@@ -8,7 +8,7 @@ const api = axios.create({
     'Accept': 'application/json',
     'X-Requested-With': 'XMLHttpRequest'
   },
-  withCredentials: false,
+  withCredentials: false, // Set to false to work with * CORS origin
   timeout: 10000,
 });
 

@@ -10,7 +10,7 @@ services:
     restart: always
     environment:
       - NODE_ENV=production
-      - VITE_API_URL=http://api.yourdomain.com/api
+      - VITE_API_URL=/api
     depends_on:
       - server
 
