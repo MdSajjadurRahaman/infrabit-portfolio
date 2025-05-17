@@ -1,0 +1,44 @@
+{
+  "name": "InfraBit Portfolio",
+  "version": "1.0.0",
+  "description": "Full stack React application for InfraBit company portfolio",
+  "repository": "https://github.com/MdSajjadurRahaman/infrabit-portfolio",
+  "author": "InfraBit Team",
+  "license": "MIT",
+  "technologies": [
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Tailwind CSS",
+    "Vite",
+    "Docker"
+  ],
+  "categories": [
+    "Web Application",
+    "Portfolio",
+    "Full Stack"
+  ],
+  "features": [
+    "Responsive design",
+    "Modern UI",
+    "Projects showcase",
+    "Team members section",
+    "Services overview",
+    "Testimonials carousel",
+    "Contact form",
+    "Admin panel",
+    "Authentication system",
+    "Password reset"
+  ],
+  "keywords": [
+    "react",
+    "nodejs",
+    "portfolio",
+    "fullstack",
+    "mongodb",
+    "typescript",
+    "tailwindcss"
+  ]
+}

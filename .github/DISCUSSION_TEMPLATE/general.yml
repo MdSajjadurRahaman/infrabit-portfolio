@@ -1,0 +1,45 @@
+title: "Discussion: "
+labels: ["discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Welcome to InfraBit Portfolio Discussions!
+        
+        This space is for community discussions about the project.
+        
+  - type: dropdown
+    id: discussion-type
+    attributes:
+      label: Discussion Type
+      description: What type of discussion would you like to start?
+      options:
+        - Question (Help with using the project)
+        - Idea (Feature requests and project direction)
+        - Show and Tell (Share what you've built)
+        - General Discussion
+    validations:
+      required: true
+      
+  - type: textarea
+    id: discussion-content
+    attributes:
+      label: Discussion
+      description: What would you like to discuss?
+      placeholder: Share your thoughts, questions, or ideas in detail
+    validations:
+      required: true
+      
+  - type: textarea
+    id: related-resources
+    attributes:
+      label: Related Resources
+      description: Relevant links, code, or screenshots
+      placeholder: Include any links, code samples, or screenshots that support your discussion
+    validations:
+      required: false
+      
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for being part of our community!
